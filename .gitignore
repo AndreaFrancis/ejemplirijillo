@@ -1,0 +1,4 @@
+/busa/busa-cliente/target/
+/busa/busa-proxy/target/
+/busa/busa-servicio/target/
+/busa/busa-cliente/src/main/resources/configuracion.properties

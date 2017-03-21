@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introducción &mdash; documentación de Plataforma BUSA - 0.0.1</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../search.html"/>
+    <link rel="top" title="documentación de Plataforma BUSA - 0.0.1" href="../index.html"/>
+        <link rel="next" title="Arquitectura" href="arquitectura.html"/>
+        <link rel="prev" title="Plataforma BUSA" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Plataforma BUSA
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Documentación</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introducción</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#antecedentes">Antecedentes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#objetivo">Objetivo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Plataforma BUSA</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Introducción</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/documentacion/introduccion.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduccion">
+<h1>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Actualmente ADSIB presta servicios en el ámbito de las Tecnologías de la Información y la Comunicación como ser: Firma digital, Nic.bo, Repositorio Estatal y Sellado de tiempo (Proximamente).</p>
+<p>Para el caso de Firma digital, Nic.bo y Sellado de tiempo, existen tarifas que los usuarios deben pagar para poder hacer uso de estos servicios, es en este punto donde los sistemas de ADSIB requieren realizar validaciones de pagos para efectuar su facturación.</p>
+<p>Es de esta manera que se plantea la Plataforma BUSA para realizar estas operaciones.</p>
+<div class="section" id="antecedentes">
+<h2>Antecedentes<a class="headerlink" href="#antecedentes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El Banco Unión S.A provee un servicio seguro para poder consultar el detalle de los movimientos en una cuenta bancaria mediante SOAP.</p>
+<p>Bajo esta funcionalidad, ADSIB y Banco Unión S.A firmaron un convenio en fecha X bajo el cuál el banco le permite ser cliente de consumo para obtener los siguientes datos de los últimos N movimientos realizados en su cuenta bancaria:</p>
+<ul class="simple">
+<li>Fecha</li>
+<li>Tipo de movimiento (Depósito o retiro)</li>
+<li>Numero del documento de identidad de la persona que realizo el movimiento.</li>
+<li>Monto del movimiento realizada, el valor es negativo si el movimiento es de un retiro.</li>
+<li>Número del movimiento.</li>
+</ul>
+</div>
+<div class="section" id="objetivo">
+<h2>Objetivo<a class="headerlink" href="#objetivo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Implementar una plataforma de consulta de detalle de los movimientos realizados en una cuenta bancaria para los sistemas de ADSIB.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="arquitectura.html" class="btn btn-neutral float-right" title="Arquitectura" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Plataforma BUSA" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, adsib.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

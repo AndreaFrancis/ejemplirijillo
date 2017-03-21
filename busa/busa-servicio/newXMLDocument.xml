@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><XtradoMovimientosUltimosCadena>
+    <Result>0</Result>
+    <saldoInicial>10360.0</saldoInicial>
+    <Extracto>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74065424</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876939494</NumMovtoDiario>
+            <FecLiteral>25/02/2016 14:58:04</FecLiteral>
+            <Detalle>HORAS: 14:58;DEPOSITANTE: MARY MONTERO;AGENCIA: SAN MIGUEL (LPZ); EFECTIVO = 280 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74065749</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876940475</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:00:30</FecLiteral>
+            <Detalle>HORAS: 14:59;DEPOSITANTE: IBER CARVALLO ORELLANA;AGENCIA: AUTOBANCO NORTE (SCZ); EFECTIVO = 280 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74066863</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876942670</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:05:57</FecLiteral>
+            <Detalle>HORAS: 15:05;DEPOSITANTE: VICTOR EDUARDO CAMPERO DE LA CRUZ;AGENCIA: SUCURSAL COCHABAMBA; EFECTIVO = 280 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74072551</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876953118</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:34:43</FecLiteral>
+            <Detalle>HORAS: 15:34;DEPOSITANTE: EDWIN ROMAN RAMOS SULLCATA;AGENCIA: SAN PEDRO (LPZ); EFECTIVO = 280 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74075501</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876957516</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:48:40</FecLiteral>
+            <Detalle>HORAS: 15:48;DEPOSITANTE: CALVIMONTE ROCHA ALEX IVAR;AGENCIA: AGENCIA RIO SECO (LPZ); EFECTIVO = 280 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74075507</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876957518</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:48:41</FecLiteral>
+            <Detalle>HORAS: 15:48;DEPOSITANTE: CALVIMONTE ROCHA ALEX IVAR;AGENCIA: AGENCIA RIO SECO (LPZ); EFECTIVO = 280 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>876959681</NumDocumento>
+            <Descripcion>N/C TRASP. DESDE MOSCOSO ARCE GEOFFREY</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876959681</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:55:41</FecLiteral>
+            <Detalle>Fecha:25/02/2016 15:55;Cuenta Origen :10000005617044-MOSCOSO ARCE GEOFFREY;Cuenta Destino :10000004675952-EMPRESA PRUEBA WFIAIOTA4N;Monto Transferido :280;Moneda :BOLIVIANOS;Descripción:TRANSF. DESDE LA CTA:10000005617044</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74076989</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>6300.00</Monto>
+            <NumMovtoDiario>876959696</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:55:45</FecLiteral>
+            <Detalle>HORAS: 15:55;DEPOSITANTE: FANCESA.BO;AGENCIA: AGENCIA LAS AMERICAS (SUCRE); EFECTIVO = 6300 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74077570</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876960189</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:57:29</FecLiteral>
+            <Detalle>HORAS: 15:57;DEPOSITANTE: LEIGUE GOMEZ CARLOS RENAN;AGENCIA: AGENCIA VILLA FATIMA (LPZ); EFECTIVO = 280 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>74077408</NumDocumento>
+            <Descripcion>DEPOSITO A CUENTA</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876960258</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:57:43</FecLiteral>
+            <Detalle>HORAS: 15:56;DEPOSITANTE: MARLEN ESDENKA MENDEZ ESCOBAR;AGENCIA: BLANCO GALINDO (CBBA); CHK O/BCO F/HORA;     CTA: 4010635577, CHK: 1 = 280 BS</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>876960710</NumDocumento>
+            <Descripcion>N/C TRASP. DESDE MOSCOSO ARCE GEOFFREY</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>1540.00</Monto>
+            <NumMovtoDiario>876960710</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:59:08</FecLiteral>
+            <Detalle>Fecha:25/02/2016 15:59;Cuenta Origen :10000005617044-MOSCOSO ARCE GEOFFREY;Cuenta Destino :10000004675952-EMPRESA PRUEBA WFIAIOTA4N;Monto Transferido :1540;Moneda :BOLIVIANOS;Descripción:TRANSF. DESDE LA CTA:10000005617044</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>60225</NumDocumento>
+            <Descripcion>N/D TRANSFERENCIA DE FONDOS A C.U.T.</Descripcion>
+            <TipoMovimiento>D</TipoMovimiento>
+            <Monto>-20160.00</Monto>
+            <NumMovtoDiario>876960726</NumMovtoDiario>
+            <FecLiteral>25/02/2016 15:59:11</FecLiteral>
+            <Detalle></Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>876968249</NumDocumento>
+            <Descripcion>N/C TRASP. DESDE SOLIZ PEREIRA MELITON</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876968249</NumMovtoDiario>
+            <FecLiteral>25/02/2016 16:22:01</FecLiteral>
+            <Detalle>Fecha:25/02/2016 16:22;Cuenta Origen :10000010354087-SOLIZ PEREIRA MELITON;Cuenta Destino :10000004675952-EMPRESA PRUEBA WFIAIOTA4N;Monto Transferido :280;Moneda :BOLIVIANOS;Descripción:TRANSF. DESDE LA CTA:10000010354087</Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>0</NumDocumento>
+            <Descripcion>N/C POR TRASPASO ENTRE BANCOS ACH</Descripcion>
+            <TipoMovimiento>C</TipoMovimiento>
+            <Monto>280.00</Monto>
+            <NumMovtoDiario>876975370</NumMovtoDiario>
+            <FecLiteral>25/02/2016 16:52:36</FecLiteral>
+            <Detalle></Detalle>
+        </Movimiento>
+        <Movimiento>
+            <FechaMovimiento>25/02/2016</FechaMovimiento>
+            <FechaAdicion>25/02/2016</FechaAdicion>
+            <NumDocumento>60225</NumDocumento>
+            <Descripcion>N/D TRANSFERENCIA DE FONDOS A C.U.T.</Descripcion>
+            <TipoMovimiento>D</TipoMovimiento>
+            <Monto>-840.00</Monto>
+            <NumMovtoDiario>877013701</NumMovtoDiario>
+            <FecLiteral>25/02/2016 22:29:05</FecLiteral>
+            <Detalle></Detalle>
+        </Movimiento>
+    </Extracto>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+            <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+            <Reference URI="">
+                <Transforms>
+                    <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                    <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                </Transforms>
+                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+                <DigestValue>j5YRcLT642xZYSU0wg17dSVrAZjpLE+OgubZQxa67TA=</DigestValue>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue>Rp9MDzmUMDzOIIqGgGgUaSprCXO26LHfpet+GqRFvAJ3LQAeO9jyQjGl5JxtuSymyv1P9aelNi2gs04GC23fO11ezaheIn0oXkVlWcmHFqDFqImHfXL/jvY3OJbtBCRtzM9bsM+Q8QmDSH3NLaCM/TNKU+FkT31yeksy8rl86dWzbSzGUA3xPGViBMk0jYRxrZNj6CSgtBJ64z3bVuFBoxd9kDwogPDt/tdBisJWdPdqRZitpiCEYCCHWeXozGBsI54r5JhZ1V4M5np4W5IAEnYFCywXpsRR+ZpmQxg6dWRevlR/r5tWydjcfemVd+KOQ3kDk/DQQpfb1YGlhHZmKA==</SignatureValue>
+    </Signature>
+</XtradoMovimientosUltimosCadena>

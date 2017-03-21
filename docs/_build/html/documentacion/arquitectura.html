@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Arquitectura &mdash; documentación de Plataforma BUSA - 0.0.1</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../search.html"/>
+    <link rel="top" title="documentación de Plataforma BUSA - 0.0.1" href="../index.html"/>
+        <link rel="prev" title="Introducción" href="introduccion.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Plataforma BUSA
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Documentación</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Arquitectura</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#componentes">Componentes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#busa-cliente">1. busa-cliente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#firmador-estatal">2. firmador-estatal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#busa-proxy">3. busa-proxy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#interaccion-entre-componentes">Interacción entre componentes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#consumo-de-un-sistema-de-adsib-u-otro-cliente">Consumo de un sistema de ADSIB u otro cliente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#busa-proxy-a-busa-cliente">1. busa-proxy a busa-cliente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#busa-cliente-a-firmador-estatal">2. busa-cliente a firmador-estatal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#busa-cliente-a-banco-union-s-a">3. busa-cliente a Banco Unión S.A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#banco-union-s-a-a-busa-cliente">4. Banco Unión S.A a busa-cliente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">5. busa-cliente a firmador-estatal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#busa-cliente-a-busa-proxy">6. busa-cliente a busa-proxy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Plataforma BUSA</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Arquitectura</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/documentacion/arquitectura.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="arquitectura">
+<h1>Arquitectura<a class="headerlink" href="#arquitectura" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Para el desarrollo de la plataforma, son necesarias las siguientes tareas:</p>
+<ul class="simple">
+<li>Un cliente que consuma los servicios de Banco Unión S.A</li>
+<li>Un mecanismo que permita firmar los datos enviados al servicio y verificar las respuestas del mismo</li>
+<li>Un servicio que permita replicar el consumo de los servicios para los sistemas internos de ADSIB en un API REST</li>
+</ul>
+<div class="section" id="componentes">
+<h2>Componentes<a class="headerlink" href="#componentes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una vez realizado el análisis de las tareas que debe realizar la plataforma, se proponen los siguiente componentes:</p>
+<div class="section" id="busa-cliente">
+<h3>1. busa-cliente<a class="headerlink" href="#busa-cliente" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Librería que consume el servicio de Banco Unión S.A para obtener los últimos N movimientos en una cuenta bancaria.</p>
+<p>El contrato de consumo proveido por  Banco Unión S.a requiere que la petición sea enviada en un XML con los siguientes datos :</p>
+<ul class="simple">
+<li>Institucion, es la institucaion con la cual se tiene el convenio.</li>
+<li>Método, es la operacion que se esta realizando</li>
+<li>NumeroCuenta, es el numero de cuenta adignado.</li>
+<li>Cantidad, es la cantidad de los ultimos movimientos en la cuenta.</li>
+<li>CodUninet, es el codigo designado por el banco union.</li>
+</ul>
+<p>El contrato de consumo proveido por Banco Unión S.a indica que la respuesta será devuelta en  un XML con los siguiente datos:</p>
+<ul class="simple">
+<li>SaldoInicial, es el monto de dinero con el que se cuenta antes de los n movimientos</li>
+<li>Extracto, contiene el detalle de cada transaccion y contiene los siguiente:</li>
+<li>FechaMovimiento, la fecha del movimiento.</li>
+<li>FechaAdicion, la fecha d la adicion del dinero.</li>
+<li>NumDocumento, es el numero que entregan en la boleta de transacción.</li>
+<li>Descripcion, es la descripción de la transaccion.</li>
+<li>TipoMovimiento, es el tipo de movimiento, puede ser C de depósito o D retiro de dinero.</li>
+<li>Monto, es el monto de la transacción.</li>
+<li>NumMovtoDiario, es un identificador de la transaccion(no deberia repetirse, pero en los ejemplos del banco union se a repetido una vez).</li>
+<li>FecLiteral la fecha de transaccion inluyendo la hora.</li>
+<li>Detalle es un resumen de la transaccion, puede variar en formato.</li>
+</ul>
+<p>Para ver la documentación de este componente, dirijase a  <a class="reference external" href="http://test.adsib.gob.bo/busa/javadoc">Java Doc Busa Cliente</a>.</p>
+<p>Las peticiones enviadas a Banco Unión S.A requieren ser firmadas con una clave privada y las respuestas requieren ser validadas con la clave pública del banco, para tal efecto, se hará uso del siguiente componente &#8220;Firmador Estatal&#8221;.</p>
+</div>
+<div class="section" id="firmador-estatal">
+<h3>2. firmador-estatal<a class="headerlink" href="#firmador-estatal" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Librería desarrollada por el grupo de desarrollo <a class="reference external" href="http://doc.geo.gob.bo/docs/firmador-digital/es/latest/">Firmador Estatal</a>. conformado por diferentes instituciones del estado.</p>
+<p>Se empleará especificamente la librería para realizar firmado y verificación de un mensaje SOAP en XML.</p>
+<p>Para ver la documentación de este componente externo, dirijase a  <a class="reference external" href="https://test.adsib.gob.bo/firmador/javadoc/">Java Doc Firmador Estatal</a>.</p>
+</div>
+<div class="section" id="busa-proxy">
+<h3>3. busa-proxy<a class="headerlink" href="#busa-proxy" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Capa que provee una API REST para los sistemas de ADSIB y otros clientes (Ej.: Curl, Postman, etc. ).</p>
+<p>La funcionalidad inicial será la de obtener los últimos N movimientos en una cuenta bancaria para lo cuál hará uso del componente busa-cliente.</p>
+<p>Para ver la documentación de la API, dirijase a  <a class="reference external" href="http://test.adsib.gob.bo/busa/apidoc">Api Doc Busa Proxy</a>.</p>
+</div>
+</div>
+<div class="section" id="interaccion-entre-componentes">
+<h2>Interacción entre componentes<a class="headerlink" href="#interaccion-entre-componentes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una vez que se definen los componentes necesarios para conformar la plataforma, se tiene el siguiente flujo de trabajo:</p>
+<img alt="../_images/modulos.png" src="../_images/modulos.png" />
+<div class="section" id="consumo-de-un-sistema-de-adsib-u-otro-cliente">
+<h3>Consumo de un sistema de ADSIB u otro cliente<a class="headerlink" href="#consumo-de-un-sistema-de-adsib-u-otro-cliente" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Un sistema de ADSIB u otro cliente (Ej: Curl, Postman, etc.) se conecta a la API de busa-proxy pidiendo los últimos n movimientos realizados sobre la cuenta bancaria de ADSIB.</p>
+</div>
+<div class="section" id="busa-proxy-a-busa-cliente">
+<h3>1. busa-proxy a busa-cliente<a class="headerlink" href="#busa-proxy-a-busa-cliente" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>busa-proxy llama al método de busa-cliente que le permite comunicarse con Banco Unión S.A y le envía los parámetros del cliente.</p>
+</div>
+<div class="section" id="busa-cliente-a-firmador-estatal">
+<h3>2. busa-cliente a firmador-estatal<a class="headerlink" href="#busa-cliente-a-firmador-estatal" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>busa-cliente forma la petició a enviar a Banco Unión S.A y le pide al firmador-estatal que firme el mensaje SOAP con su clave privada.</p>
+</div>
+<div class="section" id="busa-cliente-a-banco-union-s-a">
+<h3>3. busa-cliente a Banco Unión S.A<a class="headerlink" href="#busa-cliente-a-banco-union-s-a" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>busa-cliente envía la solicitud firmada al Banco Unión S.A.</p>
+</div>
+<div class="section" id="banco-union-s-a-a-busa-cliente">
+<h3>4. Banco Unión S.A a busa-cliente<a class="headerlink" href="#banco-union-s-a-a-busa-cliente" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Banco Unión S.A le devuelve a busa-cliente los detalles solicitados en un mensaje SOAP firmado con su clave privada.</p>
+</div>
+<div class="section" id="id2">
+<h3>5. busa-cliente a firmador-estatal<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>busa-cliente envía la respuesta y la clave pública de Banco Unión S.A al firmador estatal para que valide la firma.</p>
+</div>
+<div class="section" id="busa-cliente-a-busa-proxy">
+<h3>6. busa-cliente a busa-proxy<a class="headerlink" href="#busa-cliente-a-busa-proxy" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>busa-cliente devuelve a busa-proxy la respuesta a la solicitud de su cliente.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="introduccion.html" class="btn btn-neutral" title="Introducción" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, adsib.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "BUSA",
+  "version": "1.0.0",
+  "description": "apiDoc BUSA Proxy",
+  "title": "apiDoc BUSA Proxy",
+  "url" : "",
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}

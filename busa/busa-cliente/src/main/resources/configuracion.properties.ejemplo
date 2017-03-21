@@ -1,0 +1,18 @@
+# To change this license header, choose License Headers in Project Properties.
+alias=nombre_alias
+numeroCuenta=10000003456789
+codUninet=2233445
+ip=100.168.1.1
+institucion=SIGLA
+certificadoBU=/home/usuario/busa/bancoUnion.cer
+rutaKeyStore=/home/usuario/busa/busaKeyStore.p12
+contrasenaKeyStore=12345678
+contrasenaClavePrivada=12345678
+metodo=getExtracto
+##Saltos
+rango=5
+
+
+
+
+

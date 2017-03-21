@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/home/sergio/Descargas/WS_Proxy_IntercambioInformacion.C_Proxy_IntercambioInformacion.svc.wsdl" uri="wsdl/WS_Proxy_IntercambioInformacion.C_Proxy_IntercambioInformacion.svc.wsdl"/>
+    <system systemId="file:/home/sergio/Descargas/schema0.xsd" uri="wsdl/schema0.xsd"/>
+    <system systemId="file:/home/sergio/Descargas/schema1.xsd" uri="wsdl/schema1.xsd"/>
+</catalog>
